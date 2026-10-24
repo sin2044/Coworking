@@ -1,0 +1,14 @@
+.advantage {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+
+  &__icon {
+    flex-shrink: 0;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

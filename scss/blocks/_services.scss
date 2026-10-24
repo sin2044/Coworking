@@ -1,0 +1,10 @@
+.services {
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+  }
+}

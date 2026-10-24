@@ -1,0 +1,42 @@
+.intro {
+  &__wrapper {
+    background-image:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+      url("./../img/intro/intro-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    overflow: hidden;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+        url("./../img/intro/intro-bg@2x.jpg");
+    }
+  }
+
+  &__content {
+    max-width: 678px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+
+  }
+
+  &__btns {
+    display: flex;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,23 @@
+.faq {
+
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+
+  }
+
+  &__title {
+    max-width: 470px;
+    flex-shrink: 0;
+  }
+
+  &__topics {
+    max-width: 670px;
+    flex-shrink: 0;
+
+  }
+
+  
+}
+

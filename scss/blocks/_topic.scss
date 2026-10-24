@@ -1,0 +1,49 @@
+.topic {
+  padding: 30px 0;
+  border-top: 1px solid #ececf1;
+  border-bottom: 1px solid #ececf1;
+
+  & + & {
+    margin-top: -1px;
+  }
+
+  &__btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__content {
+    padding-top: 30px;
+    flex-direction: column;
+    gap: 16px;
+    display: none;
+    &--open {
+      display: flex;
+    }
+  }
+
+  &__link {
+    color: #00ae6c;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #00965d;
+    }
+
+    &:active {
+      color: #00804c;
+    }
+  }
+
+  &__content &__link {
+    text-decoration: underline;
+  }
+}

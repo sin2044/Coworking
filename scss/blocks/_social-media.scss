@@ -1,0 +1,14 @@
+.social-media {
+  &__list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__link {
+    display: block;
+  }
+  &__icon {
+    display: block;
+  }
+}

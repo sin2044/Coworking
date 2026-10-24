@@ -1,0 +1,15 @@
+.prices {
+  padding: 60px 0 120px;
+  background-color: #f6f6f6;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__cards {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+  }
+}
+

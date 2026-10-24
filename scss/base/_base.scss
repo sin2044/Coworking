@@ -1,0 +1,134 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+.sticky-footer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
+  &--large {
+    max-width: 1510px;
+    width: 100%;
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  row-gap: 120px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+
+  &--small {
+    font-size: 42px;
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+
+  &--small {
+    font-size: 36px;
+  }
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+
+  &--small {
+    font-size: 20px;
+  }
+  &--tight {
+    line-height: 1.2;
+  }
+}
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #2f2f2f;
+
+  &--tight {
+    line-height: 1.2;
+  }
+  &--large {
+    font-size: 16px;
+  }
+
+  &--color {
+    color: #000000;
+  }
+}
+
+.price-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #00ae6c;
+
+  &__period {
+    font-size: 14px;
+  }
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+a {
+  color: #00ae6c;
+  text-decoration: underline;
+}
+
+a:focus,
+button:focus {
+  outline-offset: 1px;
+  outline: #005fcc auto 1px;
+}

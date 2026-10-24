@@ -1,0 +1,16 @@
+.locations {
+  &__content {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__title {
+    max-width: 430px;
+  }
+
+  &__controls {
+    display: flex;
+    gap: 20px;
+  }
+}

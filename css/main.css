@@ -146,6 +146,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 120px;
+  margin-bottom: 120px;
 }
 
 .logo {

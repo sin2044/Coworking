@@ -1,5 +1,8 @@
 .header {
   padding: 40px 0;
+  @include mobile {
+    padding: 20px 0;
+  }
 
   &__wrapper {
     display: flex;
@@ -11,9 +14,15 @@
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__btn {
     margin-left: 40px;
+    
   }
 }
+

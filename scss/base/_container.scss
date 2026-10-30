@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include mobile {
+    width: 360px;
+  }
+
+  &--large {
+    max-width: 1510px;
+    width: 100%;
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &--mobile-width {
+    @include mobile {
+      width: auto;
+    }
+  }
+}

@@ -1,10 +1,16 @@
 .services {
   &__title {
     margin-bottom: 40px;
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
   &__cards {
     display: flex;
     flex-wrap: wrap;
     gap: 40px 30px;
+    @include mobile {
+      row-gap: 20px
+    }
   }
 }

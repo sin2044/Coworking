@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
   &__title {
     max-width: 430px;
@@ -12,5 +15,25 @@
   &__controls {
     display: flex;
     gap: 20px;
+    &--mobile {
+      display: none;
+    }
+    @include tablet {
+      gap: 10px;
+    }
+    @include mobile {
+      display: none;
+      &--mobile {
+        margin-top: 20px;
+        display: block;
+      }
+    }
+  }
+
+  &__controls-img {
+    @include tablet {
+      width: 42px;
+      height: 42px;
+    }
   }
 }

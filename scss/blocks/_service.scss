@@ -4,6 +4,13 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  @include tablet {
+    max-width: 354px;
+  }
+
+  @include mobile {
+    gap: 10px;
+  }
 
   &__icon {
     flex-shrink: 0;
@@ -21,6 +28,9 @@
     font-weight: 800;
     line-height: 1;
     color: #000000;
+    @include tablet {
+      font-size: 18px;
+    }
   }
 
   &__text {
@@ -32,4 +42,6 @@
     line-height: 1.5;
     color: #2f2f2f;
   }
+
+
 }

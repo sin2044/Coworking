@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
     <title>CoWorks — Коворкинг мечты</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
@@ -14,7 +15,7 @@
   </head>
   <body class="sticky-footer">
     <header class="header">
-      <div class="container">
+      <div class="container container--mobile-width">
         <div class="header__wrapper">
           <div class="logo">
             <a href="index.html" class="logo__link">
@@ -41,13 +42,20 @@
               </li>
             </ul>
           </nav>
-          <div class="header__btn">
+          <button class="burger">
+            <img
+              src="./img/icons/burger-open.svg"
+              alt="открыть навигационное меню"
+              class="burger__img"
+            />
+          </button>
+          <div class="header__btn visible-desktop">
             <button class="btn btn--dark" type="button">Оставить заявку</button>
           </div>
         </div>
       </div>
     </header>
-    <main class="page">
+    <main class="main">
       <section class="intro">
         <div class="container container--large">
           <div class="intro__wrapper">
@@ -112,7 +120,7 @@
                     <img
                       src="./img/icons/snack.svg"
                       alt="icon"
-                      class="advantages__icon"
+                      class="advantage__icon"
                     />
                     <div class="advantage__info">
                       <h3 class="advantage__title">
@@ -155,13 +163,24 @@
             </div>
             <div class="locations__controls">
               <button>
-                <img src="./img/icons/arrow-left-line.svg" alt="prev" />
+                <img
+                  class="locations__controls-img"
+                  src="./img/icons/arrow-left-line.svg"
+                  alt="prev"
+                />
               </button>
               <button>
-                <img src="./img/icons/arrow-right-line.svg" alt="next" />
+                <img
+                  class="locations__controls-img"
+                  src="./img/icons/arrow-right-line.svg"
+                  alt="next"
+                />
               </button>
             </div>
           </div>
+        </div>
+
+        <div class="container container--mobile-width">
           <div class="slider">
             <img
               src="./img/slider/slide-01.jpg"
@@ -180,6 +199,24 @@
               alt="slide"
               class="slider__img"
             />
+          </div>
+        </div>
+        <div class="container">
+          <div class="locations__controls locations__controls--mobile">
+            <button>
+              <img
+                class="locations__controls-img"
+                src="./img/icons/arrow-left-line.svg"
+                alt="prev"
+              />
+            </button>
+            <button>
+              <img
+                class="locations__controls-img"
+                src="./img/icons/arrow-right-line.svg"
+                alt="next"
+              />
+            </button>
           </div>
         </div>
       </section>
@@ -284,7 +321,7 @@
                 <div class="service__content">
                   <h3 class="service__title">Ежедневный клининг</h3>
                   <div class="service__text">
-                    <p class="description">
+                    <p>
                       Дневная и ночная уборка в CEO Rooms поддерживает порядок в
                       каждой зоне.
                     </p>
@@ -340,10 +377,18 @@
               <div class="price">
                 <div class="price__img-wrap">
                   <picture>
+                    <source
+                      media="(max-width: 788px)"
+                      srcset="
+                        ./img/prices/card-01-mobile.jpg,
+                        ./img/prices/card-01-mobile@2x.jpg 2x
+                      "
+                    />
+
                     <img
                       src="./img/prices/card-01.jpg"
                       srcset="./img/prices/card-01@2x.jpg 2x"
-                      alt="reseption"
+                      alt="Reception"
                       class="price__img"
                     />
                   </picture>
@@ -368,7 +413,7 @@
                   </ul>
 
                   <div class="price__btn">
-                    <button class="btn btn--outline">Оставить заявку</button>
+                    <button class="btn btn--outline" type="button">Оставить заявку</button>
                   </div>
                 </div>
               </div>
@@ -376,10 +421,18 @@
               <div class="price">
                 <div class="price__img-wrap">
                   <picture>
+                    <source
+                      media="(max-width: 788px)"
+                      srcset="
+                        ./img/prices/card-02-mobile.jpg,
+                        ./img/prices/card-02-mobile@2x.jpg 2x
+                      "
+                    />
+
                     <img
                       src="./img/prices/card-02.jpg"
                       srcset="./img/prices/card-02@2x.jpg 2x"
-                      alt="reseption"
+                      alt="Люди работают дома"
                       class="price__img"
                     />
                   </picture>
@@ -400,13 +453,15 @@
                     </li>
                     <li class="price__item">Чай, кофе, вода</li>
                     <li class="price__item">Клиентское сопровождение</li>
-                    <li class="price__item">Без гостевых визитов</li>
-                    <li class="price__item">Переговорная комната отдельно</li>
-                    <li class="price__item">Без специальной скидки</li>
+                    <li class="price__item">10 гостевых визитов в месяц</li>
+                    <li class="price__item">4 часа переговорной комнаты</li>
+                    <li class="price__item">
+                      Скидка 30% на аренду переговорных
+                    </li>
                   </ul>
 
                   <div class="price__btn">
-                    <button class="btn btn--outline">Оставить заявку</button>
+                    <button class="btn btn--outline" type="button">Оставить заявку</button>
                   </div>
                 </div>
               </div>
@@ -414,10 +469,24 @@
               <div class="price">
                 <div class="price__img-wrap">
                   <picture>
+                    <source
+                      media="(max-width: 788px)"
+                      srcset="
+                        ./img/prices/card-03-mobile.jpg,
+                        ./img/prices/card-03-mobile@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:1220px)"
+                      srcset="
+                        ./img/prices/card-03-tablet.jpg,
+                        ./img/prices/card-03-tablet@2x.jpg 2x
+                      "
+                    />
                     <img
                       src="./img/prices/card-03.jpg"
                       srcset="./img/prices/card-03@2x.jpg 2x"
-                      alt="Люди работают в офисе"
+                      alt="человек работает в офисе"
                       class="price__img"
                     />
                   </picture>
@@ -430,7 +499,6 @@
                       <span class="price-text__period">/ месяц</span>
                     </div>
                   </div>
-
                   <ul class="price__list">
                     <li class="price__item">Закрепленное рабочее место</li>
                     <li class="price__item">Скоростной безлимитный интернет</li>
@@ -439,13 +507,15 @@
                     </li>
                     <li class="price__item">Чай, кофе, вода</li>
                     <li class="price__item">Клиентское сопровождение</li>
-                    <li class="price__item">Без гостевых визитов</li>
-                    <li class="price__item">Переговорная комната отдельно</li>
-                    <li class="price__item">Без специальной скидки</li>
+                    <li class="price__item">10 гостевых визитов в месяц</li>
+                    <li class="price__item">8 часов переговорной комнаты</li>
+                    <li class="price__item">
+                      Скидка 30% на аренду переговорных
+                    </li>
                   </ul>
 
                   <div class="price__btn">
-                    <button class="btn btn--outline">Оставить заявку</button>
+                    <button class="btn btn--outline" type="button">Оставить заявку</button>
                   </div>
                 </div>
               </div>
@@ -461,8 +531,7 @@
               <h2 class="cta__title">Остались вопросы?</h2>
               <div class="cta__text">
                 <p>
-                  Напишите нам или закажите звонок, мы свяжемся с вами в течение
-                  15 минут
+                  Напишите нам или закажите звонок, мы свяжемся с вами в течение 15 минут
                 </p>
               </div>
               <div class="cta__btns">
@@ -652,13 +721,13 @@
             <a href="index.html" class="logo__link">
               <img
                 src="./img/logo/logo-white.svg"
-                alt="Лопотип компании"
+                alt="Логотип компании"
                 class="logo__img"
               />
             </a>
           </div>
           <nav class="nav">
-            <ul class="nav__list">
+            <ul class="nav__list nav__list--footer-tablet-gap">
               <li class="nav__item">
                 <a href="#" class="nav__link nav__link--dark-theme">Локация</a>
               </li>

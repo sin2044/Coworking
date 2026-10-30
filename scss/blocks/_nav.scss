@@ -3,9 +3,20 @@
     display: flex;
     align-items: center;
     gap: 40px;
+
+    @include tablet {
+      gap: 20px;
+    }
+    &--footer-tablet-gap {
+      @include tablet {
+        gap: 40px;
+      }
+    }
+    @include mobile {
+      flex-direction: column;
+      gap: 15px;
+    }
   }
-
-
 
   &__link {
     font-size: 14px;
@@ -22,7 +33,7 @@
       color: #00ae6c;
     }
     &:active {
-      color: #00965d; 
+      color: #00965d;
     }
   }
 }

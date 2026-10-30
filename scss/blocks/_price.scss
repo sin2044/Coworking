@@ -1,8 +1,8 @@
 .price {
-  max-width: 370px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+
 
   &__img-wrap {
     border-radius: 20px;
@@ -11,8 +11,14 @@
   }
 
   &__img {
+    width: 100%;
+    display: block;
     object-fit: cover;
     aspect-ratio: 37 / 18;
+    @include tablet {
+      aspect-ratio: auto;
+      height: 180px;
+    }
   }
   &__content {
     padding: 20px 24px;

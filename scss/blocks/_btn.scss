@@ -5,6 +5,7 @@
   color: #ffffff;
   border: 1px solid transparent;
   border-radius: 80px;
+  text-align: center;
   transition:
     background-color 0.3s ease,
     border-color 0.3s ease,
@@ -84,11 +85,11 @@
     background-color: #00ae6c;
 
     &:hover {
-      background-color: #00965d; 
+      background-color: #00965d;
     }
 
     &:active {
-      background-color: #00834a; 
+      background-color: #00834a;
     }
   }
 }

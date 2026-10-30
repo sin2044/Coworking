@@ -2,6 +2,9 @@
   margin-top: auto;
   padding: 60px 0;
   background-color: #000000;
+  @include mobile {
+    padding: 40px 0;
+  }
   &__wrapper {
     display: flex;
     flex-direction: column;

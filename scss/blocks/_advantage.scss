@@ -2,9 +2,18 @@
   display: flex;
   align-items: flex-start;
   gap: 30px;
+  @include tablet {
+    gap: 20px;
+  }
+  @include mobile {
+    gap: 15px;
+  }
 
   &__icon {
     flex-shrink: 0;
+    @include tablet {
+      width: 42px;
+    }
   }
 
   &__title {
@@ -12,6 +21,10 @@
     font-weight: 800;
     line-height: 1;
     color: #000000;
+    @include tablet {
+      font-size: 18px;
+
+    }
   }
   &__info {
     display: flex;

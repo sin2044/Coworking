@@ -3,8 +3,10 @@
 @import "./base/reset";
 @import "./base/mixins";
 @import "./base/base";
+@import "./base/container";
 
 //Blocks
+@import "./blocks/main";
 @import "./blocks/btn";
 @import "./blocks/social-media";
 @import "./blocks/advantage";

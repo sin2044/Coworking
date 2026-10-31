@@ -1,5 +1,4 @@
 .faq {
-
   &__wrapper {
     display: flex;
     gap: 30px;
@@ -12,14 +11,13 @@
         gap: 20px;
       }
     }
-
   }
 
   &__title {
     max-width: 470px;
     flex-shrink: 0;
     @include tablet {
-      max-width: auto;
+      width: auto;
     }
   }
 
@@ -29,9 +27,5 @@
     @include tablet {
       max-width: 100%;
     }
-
   }
-
-  
 }
-

@@ -1,0 +1,46 @@
+.fake-checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 13px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-image: url("./../img/icons/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    border-color: #000000;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+.real-checkbox {
+  &:checked + .fake-checkbox {
+    background-color: #000000;
+    border: 1px solid transparent;
+  }
+
+  &:checked + .fake-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &:focus-visible + .fake-checkbox {
+    outline: 2px solid #005fcc;
+    outline-offset: 2px;
+  }
+}

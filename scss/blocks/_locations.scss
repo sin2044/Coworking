@@ -1,4 +1,5 @@
 .locations {
+  @include srollTopMargin();
   &__content {
     margin-bottom: 40px;
     display: flex;

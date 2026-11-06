@@ -1,0 +1,21 @@
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+  a {
+    color: #000000;
+    transition: color 0.3s ease;
+  
+
+    &:hover {
+      color: #00ae6c;
+    }
+    &:active {
+      color: #00965d;
+    }
+  }
+}

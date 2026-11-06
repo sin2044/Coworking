@@ -19,9 +19,21 @@
     }
   }
 
+  &--tablet-width {
+    @include tablet {
+      width: auto;
+    }
+  }
   &--mobile-width {
     @include mobile {
       width: auto;
     }
+  }
+
+
+  &--mobile-no-padding{
+    padding: 0;
+    // padding-right: 0;
+
   }
 }

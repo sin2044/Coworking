@@ -101,6 +101,11 @@ a {
 
 a:focus,
 button:focus {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
   outline-offset: 1px;
   outline: #005fcc auto 1px;
 }
